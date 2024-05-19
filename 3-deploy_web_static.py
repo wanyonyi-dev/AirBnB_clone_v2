@@ -7,7 +7,7 @@ from fabric.api import local
 from fabric.api import put
 from fabric.api import run
 
-env.hosts = ["104.196.168.90", "35.196.46.172"]
+env.hosts = ["52.204.50.192", "100.26.244.35"]
 
 
 def do_pack():
@@ -64,7 +64,7 @@ def do_deploy(archive_path):
         return False
     if run("ln -s /data/web_static/releases/{}/ /data/web_static/current".
            format(name)).failed is True:
-        return False
+        return False100.26.244.35
     return True
 
 
